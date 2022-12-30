@@ -1,0 +1,234 @@
+@media screen and (max-width: 992px) {
+  .navbar.nav-scroll-active {
+    backdrop-filter: none;
+  }
+  .navbar .navbar-box .hamburger {
+    display: block;
+    position: fixed;
+    bottom: -100px;
+    right: 40px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar .navbar-box .hamburger.btn-active {
+    bottom: 40px;
+  }
+
+  .navbar .navbar-box .login {
+    display: none;
+  }
+
+  .navbar .navbar-box .menu {
+    position: fixed;
+    right: 40px;
+    bottom: 120px;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: flex-start;
+    padding: 10px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 0.3s ease;
+    width: 18%;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    opacity: 0;
+  }
+  .navbar .navbar-box .menu.menu-active {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  .header {
+    padding-top: 300px;
+  }
+
+  .header .header-box input[type="submit"] {
+    width: 20%;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero .hero-box .box {
+    width: 80%;
+  }
+
+  .hero .hero-box .box-label {
+    margin-top: 70vh;
+    padding: 10px;
+    height: 120px;
+  }
+
+  .hero .hero-box .box-label .col1 h1 {
+    font-size: 25px;
+  }
+
+  .hero .hero-box .box-label .col1 h3,
+  .hero .hero-box .box-label .col2 .label1 h3,
+  .hero .hero-box .box-label .col2 .label2 h3,
+  .hero .hero-box .box-label .col2 .label3 h3 {
+    font-size: 15px;
+  }
+  .hero .hero-box .box-label .col3 a {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .hero .hero-box .box-label .col3 h3 {
+    font-size: 10px;
+  }
+
+  .service-card-1,
+  .service-card-2,
+  .service-card-3,
+  .service-card-4 {
+    width: 100%;
+  }
+
+  .contact {
+    padding-bottom: 15%;
+  }
+
+  .contact-box .contact-left {
+    display: none;
+  }
+
+  .contact-box .contact-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-box .contact-right .title {
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact-box .contact-right .title h1 {
+    font-size: 40px;
+  }
+
+  .contact-box .contact-right form {
+    padding-top: 50px;
+  }
+
+  .contact-box .contact-right input[type="text"],
+  .contact-box .contact-right input[type="email"],
+  textarea {
+    width: 50%;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer .up {
+    display: none;
+  }
+
+  footer .footer-box {
+    padding-top: 15%;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  footer .copy-box p {
+    padding-top: 15%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar .navbar-box .menu {
+    width: 35%;
+  }
+  .header .header-box .title h1 {
+    font-size: 40px;
+  }
+
+  .header .header-box .title p {
+    line-height: 1.6;
+  }
+  .header .header-box .form-select {
+    width: 34%;
+  }
+  .header .header-box input[type="submit"] {
+    width: 28%;
+    font-size: 15px;
+    padding: 5px 0;
+    height: 30px;
+  }
+
+  .header {
+    padding-top: 150px;
+  }
+
+  .hero .container {
+    width: 100%;
+  }
+
+  .hero .hero-box .box {
+    width: 100%;
+    height: 150px;
+    top: 15vh;
+    padding-top: 10px;
+  }
+
+  .hero .hero-box .box h1 {
+    font-size: 20px;
+  }
+  .hero .hero-box .box p {
+    font-size: 12px;
+  }
+
+  .hero .hero-box .box-label {
+    flex-direction: column;
+    margin-top: 46vh;
+    height: 320px;
+    row-gap: 30px;
+  }
+
+  .hero .hero-box .box-label .col1,
+  .hero .hero-box .box-label .col2 {
+    width: 100%;
+  }
+
+  .hero .hero-box .box-label .col3 {
+    width: 30%;
+  }
+
+  .hero .hero-box .box-label .col2 {
+    width: 100%;
+    column-gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .service .service-box h1 {
+    padding-top: 40%;
+  }
+  .contact-box .contact-right .title {
+    width: 100%;
+  }
+
+  .contact-box .contact-right .title h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .contact-box .contact-right input[type="text"],
+  .contact-box .contact-right input[type="email"],
+  input[type="submit"],
+  textarea {
+    width: 80%;
+  }
+
+  footer .footer-box .box:nth-child(1) p {
+    font-size: 14px;
+  }
+
+  footer .copy-box p {
+    padding-top: 15%;
+    text-align: start;
+    font-size: 14px;
+  }
+}
