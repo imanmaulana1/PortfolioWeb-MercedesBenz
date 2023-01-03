@@ -140,8 +140,15 @@
 
 @media screen and (max-width: 480px) {
   .navbar .navbar-box .menu {
-    width: 35%;
+    width: 50%;
   }
+  .navbar .navbar-box .menu li {
+    padding: 20px 10px;
+  }
+  .navbar .navbar-box .menu li a {
+    font-size: 20px;
+  }
+
   .header .header-box .title h1 {
     font-size: 40px;
   }
@@ -230,5 +237,15 @@
     padding-top: 15%;
     text-align: start;
     font-size: 14px;
+  }
+
+  footer .footer-box {
+    padding-top: 15%;
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+  }
+
+  footer .footer-box .box:nth-child(1) .sosmed {
+    justify-content: space-evenly;
   }
 }
